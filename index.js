@@ -10,7 +10,7 @@ import cfonts from 'cfonts'
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const require = createRequire(__dirname)
 
-cfonts.say('BLUE\nARCHIVE', {
+cfonts.say('Yelena\nProyect', {
   font: 'chrome',
   align: 'center',
   gradient: ['cyan', 'cyan']
