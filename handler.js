@@ -409,16 +409,16 @@ export async function handler(chatUpdate) {
 
 global.dfail = (type, m, conn, usedPrefix) => {
     let msg = {
-        rowner: `💚🌿 ¡Sensei! Este comando solo puede ser utilizado por el *COMANDANTE SUPREMO* del Club de Ingeniería.`,
-        owner: `💚🌿 ¡Sensei! Este comando solo puede ser utilizado por el *PRESIDENTE* del Club de Ingeniería y comandantes autorizados.`,
-        mods: `💚🌿 ¡Sensei! Este comando solo puede ser utilizado por los *MODERADORES ESTRATÉGICOS* del Club de Ingeniería.`,
-        premium: `💚🌿 ¡Sensei! Este comando requiere *MEMBRESÍA PREMIUM* del Club de Ingeniería para acceder a funciones avanzadas.`,
-        group: `💚🌿 ¡Sensei! Este comando solo puede ser utilizado en *UNIDADES TÁCTICAS* (grupos). Las operaciones individuales no están permitidas.`,
-        private: `💚🌿 ¡Sensei! Este comando solo puede ser utilizado en mi *CANAL PRIVADO DE COMUNICACIÓN*. Las operaciones grupales no están permitidas.`,
-        admin: `💚🌿 ¡Sensei! Este comando solo puede ser utilizado por los *ADMINISTRADORES* de la unidad táctica. Se requieren permisos de liderazgo.`,
-        botAdmin: `💚🌿 ¡Sensei! Como estratega del Club de Ingeniería, necesito ser *ADMINISTRADORA* de esta unidad táctica para ejecutar operaciones de gestión.`,
-        unreg: `💚🌿 ¡Sensei! Para usar este comando debes estar *REGISTRADO* en la base de datos del Club de Ingeniería.\n\n🌿 Para registrarte en el sistema, utiliza:\n*${usedPrefix || '.'}reg nombre.edad*\n\n📝 Ejemplo: *${usedPrefix || '.'}reg Nozomi.17*\n\n"La organización estratégica requiere identificación adecuada atentamente." Tachibana-Nozomi 💚`,
-        restrict: `💚🌿 ¡Sensei! Esta función está *DESHABILITADA* por protocolos de seguridad del Club de Ingeniería. Contacta con el administrador del sistema.`  
+       rowner: `🍭 Hola, este comando solo puede ser utilizado por el *Creador* de la Bot.`,
+        owner: `🍭 Hola, este comando solo puede ser utilizado por el *Creador* de la Bot y *Sub Bots*.`,
+        mods: `🍭 Hola, este comando solo puede ser utilizado por los *Moderadores* de la Bot.`,
+        premium: `🍭 Hola, este comando solo puede ser utilizado por Usuarios *Premium*.`,
+        group: `🍭 Hola, este comando solo puede ser utilizado en *Grupos*.`,
+        private: `🍭 Hola, este comando solo puede ser utilizado en mi Chat *Privado*.`,
+        admin: `🍭 Hola, este comando solo puede ser utilizado por los *Administradores* del Grupo.`,
+        botAdmin: `🍭 Hola, la bot debe ser *Administradora* para ejecutar este Comando.`,
+        unreg: `🍭 Hola, para usar este comando debes estar *Registrado.*\n\nUtiliza: */reg nombre.edad*\n\n> Ejemplo: /reg Daniel.17`,
+        restrict: `🍭 Hola, esta característica está *deshabilitada.*`  
     }[type]
     if (msg) return conn.reply(m.chat, msg, m, rcanal).then(_ => m.react('💢'))
 }
