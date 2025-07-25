@@ -1,5 +1,5 @@
 {
-	"name": "hatsune-miku",
+	"name": "Yelena Proyect",
 	"version": "6.0.0",
 	"description": "Simple WhatsApp Bot Multi Device",
 	"main": "index.js",
@@ -23,16 +23,16 @@
 		"MD",
 		"baileys-md"
 	],
-	"homepage": "https://github.com/Brauliovh3",
+	"homepage": "https://github.com/Daysite",
 	"author": {
-		"name": "(ㅎㅊDEPOOLㅊㅎ)"
+		"name": "Dev.Daniel"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/Brauliovh3/Hatsune_Miku_2.0.git"
+		"url": "git+https://github.com/Daysite/Yelena.git"
 	},
 	"bugs": {
-		"url": "https://github.com/Brauliovh3/Hatsune_Miku_2.0/issues"
+		"url": "https://github.com/Daysite/Yelena/issues"
 	},
 	"license": "GPL-3.0-or-later",
 	"dependencies": {
