@@ -5,12 +5,12 @@ let img = await (await fetch(`https://media.tenor.com/a_ie-YlAL1YAAAAe/blue-arch
 
   const canales = [
     {
-      id: "120363315369913363@newsletter",
-      nombre: "💙BLUE ARCHIVE CHANNEL💙",
+      id: "120363387495827095@newsletter",
+      nombre: "Yelena Proyect 🍭",
     },
     {
-      id: "120363315369913363@newsletter",
-      nombre: "💙BLUE ARCHIVE CHANNEL💙",
+      id: "120363387495827095@newsletter",
+      nombre: "Yelena Proyect 🍭",
     },
   ]
 
