@@ -22,11 +22,11 @@ let handler = async function (m, { conn, text, usedPrefix, command }) {
   user.registered = true
   let sn = createHash('md5').update(m.sender).digest('hex')
   let img = await (await fetch(`https://tinyurl.com/258rd289`)).buffer()
-  let txt = '`– R E G I S T R O  -  U S E R`\n\n'
-      txt += `┌  ✩  *Nombre* : ${name}\n`
-      txt += `│  ✩  *Edad* : ${age} años\n`
-      txt += `│  ✩  *Numero de serie*\n`
-      txt += `└  ✩  ${sn}`
+  let  let txt = `╭─⬣「 *User Registro* 」⬣\n`
+    txt += `│  ≡◦ *🪴 Nombre ∙* ${name}\n`
+    txt += `│  ≡◦ *🐢 Edad ∙* ${age} años\n`
+    txt += `│  ≡◦  ${sn}`
+    txt += `╰─⬣`
 await conn.sendAi(m.chat, botname, textbot, txt, img, img, canal, m)
 await m.react('✅')
 }
